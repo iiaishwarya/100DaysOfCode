@@ -18,7 +18,5 @@ class Solution:
                 return memo[index][sum(nums) + total]
             
         memo = [[None] * (2 * sum(nums) + 1) for _ in range(len(nums) )]
-        print(memo)
         return recursion(0, 0, memo)
-        # return self.count
         
